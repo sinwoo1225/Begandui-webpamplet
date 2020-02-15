@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비갠뒤 | portfolio</title>
+    <link rel="stylesheet" href="css/fontawesome-free-5.12.1-web/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <nav class="nav__container">
+        <div class="nav__logo-container">
+          <a href="home.html">
+            <i class="fas fa-cloud-sun fa-2x"></i>
+            <span>비갠뒤</span>
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li><a href="home.html">홈</a></li>
+          <li><a href="#">소개</a></li>
+          <li class="selected"><a href="showing.html">공연</a></li>
+          <li><a href="contact.html">연락</a></li>
+          <li class="nav__ticket-container">
+            <a href="https://forms.gle/zVm38345QPLjnMAN7">
+              <i class="fas fa-ticket-alt fa-2x"></i>
+              <span>ticket</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="showing-container">
+      <header class="showing__header">
+        <h2>공연</h2>
+        <p>It`s beginning</p>
+      </header>
+      <div class="image-container slider-item">
+        <img src="images/image_1.jpg" />
+      </div>
+      <div class="showing__contents">
+        <div class="contents__content">
+          <p>
+            <span class="font-bold">비갠뒤의 첫번째 공연이 3월5일에 처음 열립니다.</span><br />
+            마태복음 7:7~8 구하라 그러면 너희에게 주실 것이요 찾으라 그러면 찾을
+            것이요 문을 두드리라 그러면 너희에게 열릴 것이니 구하는 이마다 얻을
+            것이요 찾는 이가 찾을 것이요 두드리는 이에게 열릴 것이니라
+          </p>
+          <div class="content__horizon-line"></div>
+        </div>
+        <div class="contents__content">
+          <p>
+            빌립보서 4:6~7 아무 것도 염려하지 말고 오직 모든 일에 기도와 간구로,
+            너희 구할 것을 감사함으로 하나님께 아뢰라 그리하면 모든 지각에
+            뛰어난 하나님의 평강이 그리스도 예수 안에서 너희 마음과 생각을
+            지키시리라
+          </p>
+          <div class="content__horizon-line"></div>
+        </div>
+        <div class="contents__content">
+          <h3 class="content__title">공연안내</h3>
+          <p>
+            - 공연일자는 2020년 3월5일(목) 8:00시 입니다.</br>
+            - 공연 입장료는 음료 미포함 1인당 5000원입니다. (* 음료는 개별구매)</br>
+            - 신도브래뉴 상가 지하주차장이 있으나 주차장이 협소할 수 있으니 대중교통이나 근처 공영주차장을 이용해주세요.</br>
+            - 아래 링크를 통해 미래 온라인 예매를 할 수 있습니다.<br/>
+            * <a href="https://forms.gle/zVm38345QPLjnMAN7">https://forms.gle/zVm38345QPLjnMAN7</a>
+            </p>
+          <div class="content__horizon-line"></div>
+        </div>
+        <div class="contents__content">
+            <h3 class="content__title">장소안내</h3>
+            <p class="small-font">주소 : 인천광역시 계양구 계양대로 215 신도브래뉴 1층 (계산동)</p>
+            <div id="map"></div> 
+          </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>© 2020 BEGANDUI</span>
+      <div class="footer__icons">
+        <a href="https://www.youtube.com" class="icons__content youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com" class="icons__content instagram">
+          <img src="images/instagram.svg" />
+        </a>
+      </div>
+    </footer>
+    <script src="js/google-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPRmOXLRB_-2JnN-9r24Koj0jIfqfTX2Y&callback=initMap"
+  ></script>
+  </body>
+</html>

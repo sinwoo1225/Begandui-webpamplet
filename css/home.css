@@ -1,0 +1,111 @@
+/* 메인 */
+
+main .main__carousel-containter {
+  position: relative;
+  background-color: #fcfcfc;
+}
+
+.main__carousel-containter .slider-item {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: all 1s linear;
+  transform: scale(0.95);
+}
+
+.main__carousel-containter .slider-item.showing {
+  z-index: 1;
+  opacity: 1;
+  transform: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55vw;
+  min-height: 652px;
+}
+
+.image-container:nth-child(3) {
+  position: relative;
+}
+
+.image-container > img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.arrow-btn {
+  position: absolute;
+  z-index: 4;
+  top: 40%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.25);
+}
+
+.arrow-btn:active {
+  transform: scale(1.25);
+}
+
+.arrow-btn > span {
+  color: lightgray;
+  font-size: 2.6rem;
+}
+
+.left-arrow {
+  left: 30px;
+}
+
+.right-arrow {
+  right: 30px;
+}
+/* image3에 들어가는 jombotron */
+.jombotron {
+  position: absolute;
+  max-width: 490px;
+  width: 100%;
+  height: 262px;
+  top: 182px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.horizon-line {
+  border-top: 3px solid white;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  width: 42px;
+}
+
+.jombotron__btn {
+  padding: 12px 32px;
+  border: 1.2px solid white;
+  border-radius: 15px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.jombotron__btn:hover {
+  color: #e39066;
+  background: white;
+}
+
+.jombotron__btn:active {
+  color: #e39066;
+  background: white;
+}

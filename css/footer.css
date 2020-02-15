@@ -1,0 +1,59 @@
+/* 푸터 */
+.footer {
+  padding: 32px 74px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 196px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: rgba(60, 99, 130, 0.02);
+}
+
+.footer > span {
+  margin-right: 12px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(60, 99, 130, 1);
+}
+
+.footer .footer__icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.icons__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+}
+
+.icons__content:nth-child(n + 2) {
+  margin-left: 12px;
+}
+
+.footer__icons .icons__content:hover {
+  transform: scale(1.1);
+}
+
+.instagram {
+  background: rgba(255, 75, 43, 1);
+  background: linear-gradient(
+    167deg,
+    rgba(183, 58, 210, 1) 0%,
+    rgba(255, 75, 43, 1) 50%,
+    rgba(247, 228, 51, 1) 100%
+  );
+  border-radius: 6px;
+}
+
+.youtube {
+  font-size: 26px;
+  color: #ff0000;
+}

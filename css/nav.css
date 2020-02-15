@@ -1,0 +1,77 @@
+/* 네비게이션 */
+.top-header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav__container {
+  display: flex;
+  height: 107px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.nav__logo-container > a {
+  display: flex;
+  align-items: center;
+  color: rgba(10, 61, 98, 0.9);
+}
+
+.nav__logo-container > a > i {
+  font-size: 38px;
+}
+
+.nav__logo-container > a > span {
+  margin-top: 3px;
+  margin-left: 8px;
+  letter-spacing: 1.2px;
+  color: rgba(10, 61, 98, 0.7);
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list > li > a {
+  letter-spacing: 0.5px;
+  color: rgba(60, 99, 130, 0.7);
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  width: 96px;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+
+.nav__list > li:not(.selected) > a:hover {
+  color: rgba(10, 61, 98, 1);
+}
+
+li.selected {
+  background-color: rgba(10, 61, 98, 0.8);
+  border-radius: 12px;
+}
+
+li.selected > a {
+  color: white;
+}
+
+.nav__ticket-container {
+  margin-left: 16px;
+}
+
+.nav__ticket-container > a {
+  flex-direction: column;
+}
+
+.nav__ticket-container > a:hover {
+  transform: scale(1.03);
+}

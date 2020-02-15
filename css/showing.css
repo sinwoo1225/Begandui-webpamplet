@@ -1,0 +1,86 @@
+/*
+  메인 - 공연
+*/
+main.showing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showing-container .image-container {
+  max-height: 652px;
+  min-height: unset;
+}
+
+.showing-container > .showing__header {
+  margin: 30px 0;
+}
+
+.showing-container > .showing__header > h2 {
+  font-size: 3.2rem;
+  font-family: "Jua", sans-serif;
+  letter-spacing: 6px;
+  text-align: center;
+  color: rgba(10, 61, 98, 0.7);
+}
+
+.showing-container > .showing__header > p {
+  margin-top: 9px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Bad script", cursive;
+  color: rgba(10, 61, 98, 0.6);
+}
+
+.showing-container > .showing__contents {
+  margin-top: 22px;
+  padding: 0 16px;
+}
+
+.showing-container > .showing__contents > .contents__content {
+  padding: 16px 0;
+  max-width: 652px;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.showing-container
+  > .showing__contents
+  > .contents__content
+  .content__horizon-line {
+  width: 100%;
+  margin-top: 22px;
+  border-top: 2px solid rgba(10, 61, 98, 0.4);
+  border-radius: 40%;
+}
+
+.showing-container > .showing__contents > .contents__content > .content__title {
+  font-size: 2.32rem;
+  text-align: center;
+  color: rgba(10, 61, 98, 0.8);
+  margin-bottom: 20px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.showing-container > .showing__contents > .contents__content > p {
+  line-height: 1.8rem;
+}
+
+.showing-container > .showing__contents > .contents__content > p.small-font {
+  font-size: 1rem;
+  color: rgba(10, 61, 98, 0.65);
+  text-align: center;
+}
+
+.showing-container > .showing__contents > .contents__content > p > a {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+.showing-container > .showing__contents > .contents__content > p > a:visited {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+}
