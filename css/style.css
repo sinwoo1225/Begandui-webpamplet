@@ -85,6 +85,10 @@ main {
     justify-content: space-between;
   }
 
+  .nav__bars {
+    display: block;
+  }
+
   .nav__logo-container {
     margin-left: 24px;
   }

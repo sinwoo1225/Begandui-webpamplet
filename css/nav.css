@@ -92,4 +92,5 @@ li.selected > a {
   outline: none;
   color: rgba(10, 61, 98, 0.9);
   font-size: 26px;
+  display: none;
 }
