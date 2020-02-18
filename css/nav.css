@@ -9,11 +9,20 @@
 
 .nav__container {
   display: flex;
-  height: 107px;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.nav-lg {
+  padding: 33px 0;
+  transition: padding 0.2s ease-in-out;
+}
+
+.nav-sm {
+  padding: 16px 0;
+  transition: padding 0.2s ease-in-out;
 }
 
 .nav__logo-container > a {
@@ -74,4 +83,13 @@ li.selected > a {
 
 .nav__ticket-container > a:hover {
   transform: scale(1.03);
+}
+
+.nav__bars {
+  margin-right: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(10, 61, 98, 0.9);
+  font-size: 26px;
 }

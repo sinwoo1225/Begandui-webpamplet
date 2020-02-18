@@ -82,7 +82,7 @@ main {
   }
 
   .nav__container {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .nav__logo-container {
