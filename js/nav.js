@@ -1,6 +1,9 @@
 //디폴트 변수 선언 (각종 DOM 세팅)
 const nav__container = document.querySelector(".nav__container");
-
+const nav__modal = document.querySelector(".nav__modal");
+const modal_overlay = document.querySelector(".modal__overlay");
+const modal_cancelBtn = document.querySelector(".modal__cancel-btn");
+const navbarBtn = document.querySelector(".nav__bars");
 /*
     스크롤바가 최상위 위치(y좌표)에 있는지 확인하는 함수
     * 최상위 위치는 y좌표가 60이하인 경우라고 정의한다.
@@ -29,8 +32,18 @@ const handleScroll = e => {
   else showNavLg();
 };
 
+const showModalNav = () => {
+  nav__modal.classList.remove("hidden");
+};
+
+const hiddenModalNav = () => {
+  nav__modal.classList.add("hidden");
+};
 //자바스크립트 초기 실행 함수
 const navInit = () => {
+  navbarBtn.addEventListener("click", showModalNav);
+  modal_overlay.addEventListener("click", hiddenModalNav);
+  modal_cancelBtn.addEventListener("click", hiddenModalNav);
   window.addEventListener("scroll", handleScroll);
 };
 

@@ -10,22 +10,45 @@
 
   <body>
     <header class="top-header">
+      <nav class="nav__modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <div class="modal__column">
+            <h3 class="modal__title">메뉴</h3>
+            <button class="modal__cancel-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="modal__list ">
+            <li class="selected"><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="showing.html">공연</a></li>
+            <li><a href="contact.html">연락</a></li>
+            <li class="modal__ticket-container">
+              <a href="https://forms.gle/zVm38345QPLjnMAN7">
+                <i class="far fa-calendar-check"></i>
+                <span>온라인예매 </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav class="nav__container nav-lg">
         <div class="nav__logo-container">
           <a href="home.html">
-            <i class="fas fa-cloud-sun fa-2x"></i>
+            <i class="fas fa-rainbow"></i>
             <span>비갠뒤</span>
           </a>
         </div>
-        <ul class="nav__list">
+        <ul class="nav__list ">
           <li class="selected"><a href="#">홈</a></li>
           <li><a href="#">소개</a></li>
           <li><a href="showing.html">공연</a></li>
           <li><a href="contact.html">연락</a></li>
           <li class="nav__ticket-container">
             <a href="https://forms.gle/zVm38345QPLjnMAN7">
-              <i class="fas fa-ticket-alt fa-2x"></i>
-              <span>ticket</span>
+              <i class="far fa-calendar-check"></i>
+              <span>온라인예매 </span>
             </a>
           </li>
         </ul>

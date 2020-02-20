@@ -21,28 +21,31 @@
 }
 
 .nav-sm {
-  padding: 16px 0;
+  padding: 14px 0;
   transition: padding 0.2s ease-in-out;
 }
 
 .nav__logo-container > a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: rgba(10, 61, 98, 0.9);
 }
 
 .nav__logo-container > a > i {
-  font-size: 38px;
+  font-size: 42px;
 }
 
 .nav__logo-container > a > span {
   margin-top: 3px;
-  margin-left: 8px;
-  letter-spacing: 1.2px;
+  margin-left: 4px;
+  letter-spacing: 5px;
   color: rgba(10, 61, 98, 0.7);
-  font-size: 26px;
+  font-size: 14px;
+  text-align: center;
   font-weight: bold;
-  font-family: "Nanum Pen Script", cursive;
+  /* font-family: "Nanum Pen Script", cursive; */
+  font-family: "Jua", sans-serif;
 }
 
 .nav__list {
@@ -69,7 +72,8 @@ li.selected {
   border-radius: 12px;
 }
 
-li.selected > a {
+li.selected > a,
+.modal__list > li.selected > a {
   color: white;
 }
 
@@ -79,6 +83,12 @@ li.selected > a {
 
 .nav__ticket-container > a {
   flex-direction: column;
+  font-size: 14px;
+}
+
+.nav__ticket-container > a > i {
+  font-size: 28px;
+  margin-bottom: 7px;
 }
 
 .nav__ticket-container > a:hover {
@@ -91,6 +101,81 @@ li.selected > a {
   border: none;
   outline: none;
   color: rgba(10, 61, 98, 0.9);
-  font-size: 26px;
+  font-size: 28px;
   display: none;
+  cursor: pointer;
+}
+
+/* 토글 네비게이션 (모달형태) */
+.nav__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal__overlay {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.43);
+}
+
+.modal__content {
+  background-color: #fcfcfc;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  padding: 50px 25px;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
+  box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
+}
+
+.modal__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.modal__column .modal__title {
+  font-size: 2rem;
+  font-family: "Jua", "cursive";
+}
+
+.modal__column .modal__cancel-btn {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: rgba(10, 61, 98, 1);
+}
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+}
+
+.modal__list > li {
+  margin-bottom: 12px;
+  width: 119px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__list > li > a {
+  font-size: inherit;
+  color: rgba(10, 61, 98, 0.8);
+}
+
+.modal__list > li.modal__ticket-container > a > i {
+  font-size: 1.8rem;
+}
+.modal__list > li.modal__ticket-container > a > span {
+  font-size: 20px;
 }

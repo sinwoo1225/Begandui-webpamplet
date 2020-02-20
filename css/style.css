@@ -6,6 +6,7 @@
 @import "showing.css";
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Gaegu:700|Jua|Nanum+Pen+Script|Noto+Sans+KR&display=swap&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap");
+
 /* 공통 */
 body {
   height: 100%;
@@ -23,7 +24,15 @@ a {
 
 main {
   width: 100%;
-  margin-top: 107px;
+  margin-top: 125.2px;
+}
+
+button {
+  all: unset;
+}
+
+.hidden {
+  display: none;
 }
 
 .font-bold {

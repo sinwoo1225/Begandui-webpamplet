@@ -59,7 +59,7 @@ const init = () => {
   left_arrowBtn.addEventListener("click", previousSlide);
   right_arrowBtn.addEventListener("click", nextSlide);
   nextSlide();
-  setInterval(nextSlide, 5500);
+  setInterval(nextSlide, 6000);
 };
 
 init();
