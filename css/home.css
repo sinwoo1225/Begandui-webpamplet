@@ -61,6 +61,14 @@ main .main__carousel-containter {
   font-size: 2.6rem;
 }
 
+.color_lightgray {
+  color: lightgray;
+}
+
+.color_white {
+  color: white;
+}
+
 .left-arrow {
   left: 30px;
 }
