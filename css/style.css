@@ -35,6 +35,10 @@ button {
   display: none;
 }
 
+.opacity-07 {
+  opacity: 0.7;
+}
+
 .font-bold {
   font-weight: bold;
 }

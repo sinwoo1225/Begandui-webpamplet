@@ -32,19 +32,16 @@
   color: rgba(10, 61, 98, 0.9);
 }
 
-.nav__logo-container > a > i {
-  font-size: 42px;
+.nav__logo-container > a > img {
+  width: 50px;
 }
 
 .nav__logo-container > a > span {
-  margin-top: 3px;
   margin-left: 4px;
   letter-spacing: 5px;
-  color: rgba(10, 61, 98, 0.7);
   font-size: 14px;
   text-align: center;
   font-weight: bold;
-  /* font-family: "Nanum Pen Script", cursive; */
   font-family: "Jua", sans-serif;
 }
 
@@ -129,9 +126,9 @@ li.selected > a,
   padding: 50px 25px;
   top: 0;
   right: 0;
-  -webkit-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
-  -moz-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
-  box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.6);
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.5);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.5);
+  box-shadow: 0px 0px 15px 2px rgba(46, 74, 117, 0.5);
 }
 
 .modal__column {

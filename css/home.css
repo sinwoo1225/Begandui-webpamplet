@@ -56,7 +56,7 @@ main .main__carousel-containter {
   transform: scale(1.25);
 }
 
-.arrow-btn > span {
+.arrow-btn > span.color_lightgray {
   color: lightgray;
   font-size: 2.6rem;
 }
