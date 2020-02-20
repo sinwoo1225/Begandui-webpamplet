@@ -88,6 +88,8 @@ main .main__carousel-containter {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+  -webkit-opacity: 1;
 }
 
 .horizon-line {
@@ -98,6 +100,14 @@ main .main__carousel-containter {
   width: 42px;
 }
 
+.jombotron a {
+  color: #ffffff;
+}
+
+.jombotron a:visited {
+  color: #ffffff;
+}
+
 .jombotron__btn {
   padding: 12px 32px;
   border: 1.2px solid #ffffff;
@@ -106,6 +116,8 @@ main .main__carousel-containter {
   color: #ffffff;
   font-size: 16px;
   outline: none;
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+  -webkit-opacity: 1;
 }
 
 .jombotron__btn:hover {
