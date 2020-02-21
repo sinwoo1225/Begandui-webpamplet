@@ -62,16 +62,6 @@ main .main__carousel-containter {
   font-size: 2.6rem;
 }
 
-.color_lightgray {
-  color: #dfe4ea;
-  -webkit-text-fill-color: #dfe4ea;
-  -webkit-opacity: 1;
-}
-
-.color_white {
-  color: #ffffff;
-}
-
 .left-arrow {
   left: 30px;
 }

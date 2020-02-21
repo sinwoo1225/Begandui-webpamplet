@@ -35,6 +35,18 @@ button {
   display: none;
 }
 
+.color_lightgray {
+  color: #dfe4ea;
+  -webkit-text-fill-color: #dfe4ea;
+  -webkit-opacity: 1;
+}
+
+.color_white {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-opacity: 1;
+}
+
 .opacity-07 {
   opacity: 0.7;
 }
@@ -82,6 +94,12 @@ button {
 
   .right-arrow {
     right: 5px;
+  }
+
+  .arrow-btn > span.color_lightgray {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-opacity: 1;
   }
 
   .image-container {
