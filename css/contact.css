@@ -89,6 +89,16 @@
   transform: scale(1.07);
 }
 
+.message__container {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: rgba(10, 61, 98, 0.68);
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 @media screen and (max-width: 962px) {
   .contact__imagebox {
     width: 100%;

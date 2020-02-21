@@ -4,7 +4,7 @@
   top: 0;
   background-color: white;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .nav__container {
@@ -16,12 +16,12 @@
 }
 
 .nav-lg {
-  padding: 33px 0;
+  padding: 20px 0;
   transition: padding 0.2s ease-in-out;
 }
 
 .nav-sm {
-  padding: 14px 0;
+  padding: 10px 0;
   transition: padding 0.2s ease-in-out;
 }
 
@@ -110,6 +110,7 @@ li.selected > a,
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 100;
 }
 
 .modal__overlay {
