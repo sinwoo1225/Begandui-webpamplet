@@ -6,14 +6,23 @@ const form__subject = document.querySelector("input[name=subject]");
 const form__message = document.querySelector("textarea[name=message]");
 const submitBtn = document.querySelector("button.content__submitbtn");
 const alertMsg = document.querySelector("#alertMsg");
+const sendingMsg = document.querySelector("#sendingMsg");
 
-const showMsg = () => {
+const showAlertMsg = () => {
   alertMsg.classList.remove("hidden");
-  setTimeout(hiddenMsg, 3000);
+  setTimeout(hiddenAlertMsg, 3000);
 };
 
-const hiddenMsg = () => {
+const hiddenAlertMsg = () => {
   alertMsg.classList.add("hidden");
+};
+
+const showSendingMsg = () => {
+  sendingMsg.classList.remove("hidden");
+};
+
+const hiddenASendingMsg = () => {
+  sendingMsg.classList.add("hidden");
 };
 
 const checkInputValue = () => {
@@ -23,9 +32,10 @@ const checkInputValue = () => {
     form__subject.value.length > 0 &&
     form__message.value.length > 0
   ) {
+    showSendingMsg();
     return true;
   } else {
-    showMsg();
+    showAlertMsg();
     return false;
   }
 };
@@ -113,6 +123,7 @@ const checkInputValue = () => {
         if (formElements) {
           formElements.style.display = "none"; // hide form
         }
+        hiddenASendingMsg();
         var thankYouMessage = form.querySelector(".thankyou_message");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
