@@ -4,8 +4,6 @@
 @import "home.css";
 @import "contact.css";
 @import "showing.css";
-@import url("https://fonts.googleapis.com/css?family=Bad+Script|Jua|Nanum+Pen+Script|Noto+Sans+KR&display=swap&subset=korean");
-@import url("https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap");
 
 /* 공통 */
 body {
@@ -24,7 +22,7 @@ a {
 
 main {
   width: 100%;
-  margin-top: 104.6px;
+  margin-top: 91px;
 }
 
 button {
