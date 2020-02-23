@@ -6,11 +6,11 @@ const modal_cancelBtn = document.querySelector(".modal__cancel-btn");
 const navbarBtn = document.querySelector(".nav__bars");
 /*
     스크롤바가 최상위 위치(y좌표)에 있는지 확인하는 함수
-    * 최상위 위치는 y좌표가 60이하인 경우라고 정의한다.
+    * 최상위 위치는 y좌표가 40이하인 경우라고 정의한다.
 */
 const isScrollTop = () => {
   const { scrollY } = window;
-  if (scrollY < 60) return true;
+  if (scrollY < 40) return true;
   return false;
 };
 
