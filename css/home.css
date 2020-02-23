@@ -82,7 +82,6 @@ main .main__carousel-containter {
   justify-content: flex-start;
   align-items: center;
   -webkit-text-fill-color: rgba(255, 255, 255, 1);
-  -webkit-opacity: 1;
 }
 
 .horizon-line {
@@ -110,19 +109,16 @@ main .main__carousel-containter {
   font-size: 16px;
   outline: none;
   -webkit-text-fill-color: rgba(255, 255, 255, 1);
-  -webkit-opacity: 1;
 }
 
 .jombotron__btn:hover {
   color: #e39066;
   -webkit-text-fill-color: #e39066;
-  -webkit-opacity: 1;
   background: #ffffff;
 }
 
 .jombotron__btn:active {
   color: #e39066;
   -webkit-text-fill-color: #e39066;
-  -webkit-opacity: 1;
   background: #ffffff;
 }
