@@ -40,6 +40,7 @@
   width: 100%;
   min-width: 320px;
   max-width: 452px;
+  height: auto;
 }
 
 .contact__content {
@@ -104,7 +105,9 @@
   .contact__imagebox {
     width: 100%;
   }
-
+  .contact__imagebox > img {
+    max-height: 962px;
+  }
   .contact__content {
     width: 100%;
     padding: 12px;
@@ -115,5 +118,6 @@
 @media screen and (max-width: 452px) {
   .contact__imagebox > img {
     max-width: unset;
+    max-height: 452px;
   }
 }
