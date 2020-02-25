@@ -1,14 +1,12 @@
 const SHOWING_CLASS = "showing";
-const slides = document.querySelectorAll(".slider-item");
+const slides = document.querySelectorAll(
+  ".main__carousel-containter > .slider-item"
+);
 const slide_num = slides.length;
 const firstSlide = slides[0];
 const lastSlide = slides[slide_num - 1];
-const left_arrowBtn = document.querySelector(
-  "body > main > div > button.arrow-btn.left-arrow"
-);
-const right_arrowBtn = document.querySelector(
-  "body > main > div > button.arrow-btn.right-arrow"
-);
+const left_arrowBtn = document.querySelector("button.arrow-btn.left-arrow");
+const right_arrowBtn = document.querySelector("button.arrow-btn.right-arrow");
 
 // 전역변수 설정
 let slide_index = 0;
