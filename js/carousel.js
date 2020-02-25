@@ -10,9 +10,10 @@ const right_arrowBtn = document.querySelector("button.arrow-btn.right-arrow");
 
 // 전역변수 설정
 let slide_index = 0;
-
+let slideTimer = null;
 // 함수선언
-const nextSlide = () => {
+const nextSlide = e => {
+  if (e) clearTimeout(slideTimer);
   const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
 
   if (currentSlide) {
@@ -30,9 +31,11 @@ const nextSlide = () => {
   } else {
     firstSlide.classList.add(SHOWING_CLASS);
   }
+  slideTimer = setTimeout(nextSlide, 6000);
 };
 
-const previousSlide = () => {
+const previousSlide = e => {
+  if (e) clearTimeout(slideTimer);
   const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
 
   if (currentSlide) {
@@ -50,6 +53,7 @@ const previousSlide = () => {
   } else {
     firstSlide.classList.add(SHOWING_CLASS);
   }
+  slideTimer = setTimeout(nextSlide, 6000);
 };
 
 // 초기화 함수
@@ -57,7 +61,7 @@ const init = () => {
   left_arrowBtn.addEventListener("click", previousSlide);
   right_arrowBtn.addEventListener("click", nextSlide);
   nextSlide();
-  setInterval(nextSlide, 6000);
+  // setInterval(nextSlide, 6000);
 };
 
 init();
