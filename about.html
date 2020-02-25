@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>비갠뒤 | portfolio</title>
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Bad+Script|Do+Hyeon|Jua|Nanum+Pen+Script|Noto+Sans+KR&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/fontawesome-free-5.12.1-web/css/all.css" />
     <link
@@ -32,7 +32,6 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <header class="top-header">
       <nav class="nav__modal hidden">
@@ -45,8 +44,8 @@
             </button>
           </div>
           <ul class="modal__list ">
-            <li class="selected"><a href="index.html">홈</a></li>
-            <li><a href="about.html">소개</a></li>
+            <li><a href="index.html">홈</a></li>
+            <li class="selected"><a href="about.html">소개</a></li>
             <li><a href="showing.html">공연</a></li>
             <li><a href="contact.html">연락</a></li>
             <li class="modal__ticket-container">
@@ -65,8 +64,8 @@
           </a>
         </div>
         <ul class="nav__list ">
-          <li class="selected"><a href="index.html">홈</a></li>
-          <li><a href="about.html">소개</a></li>
+          <li><a href="index.html">홈</a></li>
+          <li class="selected"><a href="about.html">소개</a></li>
           <li><a href="showing.html">공연</a></li>
           <li><a href="contact.html">연락</a></li>
           <li class="nav__ticket-container">
@@ -81,40 +80,35 @@
         </button>
       </nav>
     </header>
-    <main>
-      <div class="main__carousel-containter">
-        <div class="image-container slider-item">
-          <img src="images/image_1.png" />
-        </div>
-        <div class="image-container slider-item">
-          <img src="images/image_2.jpg" />
-        </div>
-        <div class="image-container slider-item">
-          <img src="images/image_3.jpg" />
-          <div class="jombotron">
-            <i class="fas fa-cloud-sun-rain fa-2x"></i>
-            <div class="horizon-line"></div>
-            <span class="font_bad-script">It`s beginning</span>
-            <span class="font_nanum-pen-script">비갠뒤</span>
-            <p class="font_jua font-size_rem margin-bottom">
-              비갠뒤 인스타그램 계정 오픈 <img src="images/instagram.svg" />
-            </p>
-            <a href="https://www.instagram.com/band_afterrain">
-              <button class="jombotron__btn color_white">인스타그램</button>
-            </a>
-          </div>
-        </div>
-        <button class="arrow-btn left-arrow">
-          <span class="color_lightgray">
-            <i class="fas fa-chevron-left"></i>
-          </span>
-        </button>
-        <button class="arrow-btn right-arrow">
-          <span class="color_lightgray">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </button>
+    <main class="showing-container">
+      <header class="showing__header">
+        <h2>소개</h2>
+        <p>It`s About us</p>
+      </header>
+      <div class="image-container slider-item">
+        <img src="images/image_2.jpg" />
       </div>
+      <div class="showing__contents">
+        <div class="contents__content">
+            <h3 class="content__title">비갠뒤</h3>
+            <p>
+                <span class="font-bold">비갠뒤는,</span><br />
+                비갠뒤는 흐리거나 짓궂은 날씨 뒤에 맑아지는 하늘을 그리며 우리의 마음에도 비가 개길 바라는 마음을
+                맑음, 흐림, 비, 눈, 바람, 안개, 천둥처럼 다양한 날씨같은 음악에 담아냅니다.
+            </p>
+          <div class="content__horizon-line"></div>
+        </div>
+        <div class="contents__content">
+            <h3 class="content__title">MEMBER</h3>
+            <p>
+            <span class="font-bold">Member</span><br />
+            Vocal : 이수민, 장예정<br/>
+            Keys : 이채현 <br/>
+            Bass : 전소진 <br/>
+            Perc : 최신우 <br/>
+          </p>
+          <div class="content__horizon-line"></div>
+        </div>
     </main>
     <footer class="footer">
       <span>© 2020 BEGANDUI</span>
@@ -134,6 +128,5 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
-    <script src="js/carousel.js"></script>
   </body>
 </html>

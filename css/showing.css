@@ -84,3 +84,7 @@ main.showing-container {
   font-size: inherit;
   text-decoration: underline;
 }
+
+.text-center {
+  text-align: center;
+}
