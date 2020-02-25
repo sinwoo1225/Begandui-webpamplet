@@ -14,7 +14,7 @@ main.showing-container {
 }
 
 .showing-container > .showing__header {
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 .showing-container > .showing__header > h2 {
@@ -87,4 +87,9 @@ main.showing-container {
 
 .text-center {
   text-align: center;
+}
+
+.poster-image {
+  width: 100%;
+  margin-bottom: 30px;
 }
