@@ -1,5 +1,5 @@
 .profile-carousel {
-  height: 213px;
+  height: 180px;
   width: 100%;
 }
 
@@ -12,10 +12,10 @@
 }
 
 .slider-item img.slider-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 19px;
-  margin-right: 32px;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  margin-right: 42px;
 }
 
 .slider-column {
@@ -24,12 +24,13 @@
 }
 
 .slider-column .member-name {
-  font-size: 1.32rem;
+  font-size: 1.45rem;
+  letter-spacing: 2.5px;
   font-weight: bold;
-  margin-bottom: 4xxxxxpx;
+  margin-bottom: 6px;
 }
 
 .slider-column .member-status {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   opacity: 0.7;
 }

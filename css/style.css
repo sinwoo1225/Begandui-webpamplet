@@ -35,6 +35,10 @@ button {
   display: none;
 }
 
+.opacity {
+  opacity: 0.5;
+}
+
 .color_lightgray {
   color: #dfe4ea;
   -webkit-text-fill-color: #dfe4ea;

@@ -10,7 +10,6 @@ main .main__carousel-containter {
   top: 0;
   z-index: 0;
   opacity: 0;
-  transition: all 1s linear;
   transform: scale(0.95);
 }
 
@@ -18,6 +17,7 @@ main .main__carousel-containter {
   z-index: 1;
   opacity: 1;
   transform: none;
+  transition: all 1s linear;
 }
 
 .image-container {
