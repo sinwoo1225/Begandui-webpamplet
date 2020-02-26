@@ -11,6 +11,7 @@ const right_arrowBtn = document.querySelector("button.arrow-btn.right-arrow");
 // 전역변수 설정
 let slide_index = 0;
 let slideTimer = null;
+
 // 함수선언
 const nextSlide = e => {
   if (e) clearTimeout(slideTimer);
@@ -61,7 +62,6 @@ const init = () => {
   left_arrowBtn.addEventListener("click", previousSlide);
   right_arrowBtn.addEventListener("click", nextSlide);
   nextSlide();
-  // setInterval(nextSlide, 6000);
 };
 
 init();
