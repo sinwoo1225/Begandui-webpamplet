@@ -54,6 +54,14 @@ button {
   font-weight: bold;
 }
 
+.font-big{
+  font-size:2.5rem;
+}
+
+.text-cetner{
+  text-align: center;
+}
+
 .font_bad-script {
   font-family: "Bad Script", cursive;
   font-size: 26px;
