@@ -12,7 +12,8 @@ const right_arrowBtn = document.querySelector("button.arrow-btn.right-arrow");
 let slide_index = 0;
 let slideTimer = null;
 
-// 함수선언
+/* 함수선언*/
+// 다음 이미지 슬라이드
 const nextSlide = e => {
   if (e) clearTimeout(slideTimer);
   const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
@@ -35,6 +36,7 @@ const nextSlide = e => {
   slideTimer = setTimeout(nextSlide, 6000);
 };
 
+// 이전 이미지 슬라이드
 const previousSlide = e => {
   if (e) clearTimeout(slideTimer);
   const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
